@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        /* border: 2px solid blue; */
+        background-color: blanchedalmond;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        color: aliceblue;
+        padding: 50px;
+        background-color: black;
+        margin: 20px 50px;
+        box-shadow: 6px 3px 5px rgb(76, 74, 74);
+        text-shadow: 2px 1px 5px rgb(209, 207, 207);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+    </div>
+</body>
+
+</html>

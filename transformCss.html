@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property in CSS</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 150px;
+        background-color: aquamarine;
+        border: 2px solid aqua;
+        transition: all 1s ease-in-out;
+    }
+
+    .box:hover {
+        box-shadow: 5px 5px rgb(74, 74, 74);
+        border-radius: 40px;
+        /* transform: rotate(50deg); */
+        /* transform: skew(50deg); */
+        transform: scale(2);
+        /* transform: translateX(123px); */
+        /* transform: translateY(123px); */
+        /* transform: translate(123px, 123px); */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Hover to see effect</div>
+    </div>
+</body>
+
+</html>

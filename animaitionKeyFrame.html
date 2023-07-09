@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+</head>
+<style>
+    .container {
+        background-color: yellow;
+        height: 1000px;
+    }
+
+    .box {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: square;
+        animation-duration: 5s;
+        animation-iteration-count: 5;
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse; */
+    }
+
+    @keyframes square {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 0px;
+            left: 100px;
+        }
+
+        75% {
+            top: 100px;
+            left: 100px;
+        }
+
+        100% {
+            top: 100px;
+            left: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>

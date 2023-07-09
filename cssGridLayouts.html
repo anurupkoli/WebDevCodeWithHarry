@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Grid Layouts</title>
+</head>
+
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'logo navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer'
+        ;
+    }
+
+    .items{
+        border: 2px solid blue;
+        background-color: skyblue;
+        padding: 10px;
+    }
+    #logo{
+        grid-area: logo;
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        grid-area: navbar;
+    }
+
+    #section{
+        grid-area: section;
+    }
+
+    #aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items" id="logo">Logo</div>
+        <div class="items" id="navbar">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="items" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque enim possimus non dicta quas, ipsum fugiat voluptas fuga facilis quia voluptatem cumque voluptatibus aliquam repudiandae quaerat doloremque voluptate! Ipsam, aut?
+        </div>
+        <div class="items" id="aside">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore neque dolor corrupti tempora! Sequi doloribus, fuga dolorem eligendi ipsam quaerat voluptate perferendis maxime, veritatis obcaecati est consequatur autem ut omnis impedit itaque non animi. Optio, eius! Nulla eos facilis repellat blanditiis dolorum et quam voluptatum enim fuga temporibus, non natus.
+        </div>
+        <footer class="items">This is the Footer of this website</footer>
+    </div>
+</body>
+</html>

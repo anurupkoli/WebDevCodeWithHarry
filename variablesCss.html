@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+</head>
+<style>
+    :root {
+        --maxw: 600px;
+        --maxh: 600px;
+        --backColor: yellow;
+        --dangerColor: red;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--dangerColor);
+    }
+
+    .box {
+        font-size: 50px;
+        width: var(--maxw);
+        height: var(--maxh);
+        background-color: var(--backColor);
+        margin: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+    </div>
+</body>
+
+</html>

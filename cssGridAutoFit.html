@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid AutoFit and MinMax</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 30rem 30rem 30rem;
+        justify-content: center;
+        /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+
+    }
+
+    .items {
+        border: 2px solid black;
+        background-color: yellow;
+        padding: 50px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="items">Iteam1</div>
+        <div class="items">Iteam2</div>
+        <div class="items">Iteam3</div>
+        <div class="items">Iteam4</div>
+        <div class="items">Iteam5</div>
+        <div class="items">Iteam6</div>
+        <div class="items">Iteam7</div>
+        <div class="items">Iteam8</div>
+        <div class="items">Iteam9</div>
+        <div class="items">Iteam10</div>
+    </div>
+</body>
+
+</html>

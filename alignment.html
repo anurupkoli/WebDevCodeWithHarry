@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+    <title>Alighnment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            ;
+        }
+
+        .container {
+            width: 600px;
+            background-color: antiquewhite;
+            margin: 40px auto;
+            border: 2px solid rgb(128, 87, 87)
+        }
+
+        .items {
+            background-color: rgb(227, 215, 227);
+            margin: 12px 5px;
+            padding: 12px 5px;
+            border: 2px solid rgb(226, 191, 145);
+            border-radius: 10px;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #vegetables {
+            float: right;
+            width: 48%;
+        }
+
+        #drinks {
+            clear: both;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>GROCERY STORE</h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, in voluptatem. Ducimus distinctio
+                optio maxime dicta animi sit dolorum necessitatibus? Ipsa placeat quis laborum temporibus sunt, esse
+                dolorum quia facilis.</p>
+        </div>
+        <div id="vegetables" class="items">
+            <h3>vegetables</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam natus, autem modi magni, iste deserunt
+                culpa est ut voluptates nobis quis architecto nostrum tempora, itaque dolorum facilis maiores dolor
+                quod.</p>
+        </div>
+        <div id="drinks" class="items">
+            <h3>Drinks</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur distinctio repellat
+                accusantium, praesentium libero odio minima temporibus voluptatum laboriosam neque voluptas ipsa
+                voluptatibus! Hic ex accusamus totam? Sapiente, minima!</p>
+        </div>
+    </div>
+</body>
+
+</html>

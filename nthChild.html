@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and nth child</title>
+    <style>
+        .container {
+            width: 200px;
+            margin: auto;
+            border: 2px solid blue;
+        }
+
+        .items:nth-child(2) {
+            background-color: red;
+        }
+
+        .items:nth-child(2n) {
+            background-color: yellow;
+        }
+
+        .items:nth-child(odd) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li class="items" id="items1">items1</li>
+            <li class="items" id="items2">items2</li>
+            <li class="items" id="items3">items3</li>
+            <li class="items" id="items4">items4</li>
+            <li class="items" id="items5">items5</li>
+            <li class="items" id="items6">items6</li>
+            <li class="items" id="items7">items7</li>
+            <li class="items" id="items8">items8</li>
+            <li class="items" id="items9">items9</li>
+            <li class="items" id="items10">items10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

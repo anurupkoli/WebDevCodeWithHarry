@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid with Media Query</title>
+</head>
+
+<style>
+    /* *{
+        box-sizing: border-box;
+    } */
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'logo navbar navbar navbar navbar'
+            'section section section section aside'
+            'footer footer footer footer footer'
+        ;
+    }
+
+    .bdr {
+        border: 2px solid black;
+        background-color: beige;
+        padding: 5px;
+    }
+
+    #logo {
+        grid-area: logo;
+    }
+
+    #navbar {
+        display: flex;
+        /* align-items:center; */
+        justify-content: space-around;
+        grid-area: navbar;
+    }
+
+    .section {
+        grid-area: section;
+    }
+
+    .aside {
+        grid-area: aside;
+    }
+
+    footer {
+        text-align: center;
+        grid-area: footer;
+    }
+
+    @media (max-width: 500px) {
+        body {
+            background-color: red;
+        }
+
+        .container {
+            grid-template-areas:
+                'logo '
+                'navbar'
+                'section'
+                'aside'
+                'footer'
+            ;
+        }
+        .container :first-child{
+            display: block;
+            margin: auto;
+            width: 2rem;
+        }
+        #logo{
+            text-align: center;
+        }
+        #navbar{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 800px) {
+        body {
+            background-color: blue;
+        }
+
+        .container {
+            grid-template-areas:
+                'logo navbar navbar navbar navbar'
+                'section section section section section'
+                'aside aside aside aside aside'
+                'footer footer footer footer footer'
+            ;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 1000px) {
+        body {
+            background-color: yellow;
+        }
+
+        .container {
+            grid-template-areas:
+                'logo navbar navbar navbar navbar'
+                'section section section section section'
+                'aside aside aside aside aside'
+                'footer footer footer footer footer'
+            ;
+        }
+
+    }
+
+    @media (min-width: 1000px) and (max-width: 1800px) {
+        body {
+            background-color: green;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="bdr" id="logo">Logo</div>
+        <div class="bdr" id="navbar">
+            <a href="#" id="nav">Home</a>
+            <a href="#" id="nav">Services</a>
+            <a href="#" id="nav">About Us</a>
+            <a href="#" id="nav">Contact</a>
+        </div>
+
+        <div class="section bdr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cum nisi, blanditiis atque quia earum non
+            pariatur provident, illum accusamus itaque perferendis. Cupiditate quibusdam voluptatem aliquam laudantium a
+            eligendi autem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda placeat quas debitis
+            veritatis! Dolor sequi asperiores ab, voluptate, at quas aspernatur harum molestiae aut error ratione nobis
+            est deleniti eveniet necessitatibus sit cumque temporibus corporis laborum eligendi distinctio quae!
+            Deleniti, iure! A exercitationem laudantium dolorem, pariatur fugit rerum maxime at temporibus autem
+            consequatur illo soluta quo ipsa cumque iusto sed possimus saepe veniam sit odio! Atque, natus!
+        </div>
+        <div class="aside bdr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta omnis officiis voluptatibus quasi
+            perferendis nobis et id doloremque dolore cum pariatur minus, optio quibusdam debitis nemo porro voluptas
+            laborum nostrum sit aut aliquam esse. Dolores quis voluptates, ducimus eveniet vel exercitationem facilis
+            nihil sapiente id cumque atque animi. Facere, labore.
+        </div>
+        <footer class="bdr">
+            This is Footer
+        </footer>
+    </div>
+</body>
+
+</html>
