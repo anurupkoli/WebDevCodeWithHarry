@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Check Console</h1>
+    </div>
+    <script>
+        // function greet(){
+        //     console.log('Good morning');
+        // }
+        
+        // let greet = ()=> {
+        //     console.log('Good Morning');
+        // }
+
+        let greet = () => console.log('Good Morning');
+        greet();
+        
+
+        let sum = (a,b) => a+b;
+
+        let obj = {
+            greeting: "Good Morning",
+            names: ['Anurup', 'Abhay',  'Imran'],
+            speak(){
+                this.names.forEach((students)=>{
+                    console.log(this.greeting + " " + students);
+                })
+            }
+        }
+
+        obj.speak();
+
+    </script>
+</body>
+</html>

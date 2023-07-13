@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using for,forEach,forIn, forOf, while, doWhile loops in JavaScript</title>
+</head>
+<body>
+    <h1>Check  Console</h1>
+    <script>
+        // for loop  is same
+
+        let arr = [1,35,6,6,7,8];
+
+        // arr.forEach(function f(ele){
+        //     console.log(ele);
+        // })
+        
+        let employee = {
+            name:  "Anurup",
+            salary:  20,
+            age: 13
+        }
+        for(key in employee){
+            console.log(`${key} of Employee is ${employee[key]}`);
+        }
+
+        // while loop and doWhile loop are also same
+    </script>
+</body>
+</html>
