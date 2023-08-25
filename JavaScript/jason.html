@@ -6,6 +6,24 @@
     <title>Jason in JavaScript</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Check Console</h1>
+    </div>
+
+    <script>
+        let jsonObj = {
+            name: "Anurup",
+            channel: "CWH",
+            friend: "Abhay",
+            food: "Bhindi"
+        }
+        console.log(jsonObj)
+
+        let jsonString = JSON.stringify(jsonObj);
+        console.log(jsonString);
+
+        let newJsonObj = JSON.parse(jsonString);
+        console.log(newJsonObj);
+    </script>
 </body>
 </html>

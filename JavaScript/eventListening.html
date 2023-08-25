@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listening to Events</title>
 </head>
+
 <body>
     <div class="container">
         <h1>This is my heading</h1>
-        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit obcaecati eos asperiores similique repellat unde dolore non dignissimos numquam, eaque voluptatem incidunt libero omnis quas ipsum sit quis voluptate magnam odio ab quasi aspernatur dolor! Aspernatur, corporis. Repudiandae, dolore itaque pariatur praesentium illum aperiam nisi magni ad exercitationem obcaecati eius cupiditate architecto quisquam officiis dolores hic placeat minus fuga vel corporis repellat. Autem reprehenderit aliquam ab veniam laboriosam recusandae provident eos veritatis iste, inventore explicabo facere, libero earum error similique. Ducimus dolorum voluptas iusto optio, perferendis quibusdam repellat tempora praesentium debitis labore officia sint, tenetur sit ut magnam eos quasi dolorem pariatur nemo. Quam eius velit fuga aperiam aut tenetur ex minus laboriosam, alias id beatae vero nisi magni saepe quibusdam? Vitae error corporis esse vero officia! Nemo neque temporibus nisi, alias modi deserunt ad illum, eos et expedita eum laudantium quas veritatis. Laudantium rerum ipsa earum. Rerum, vitae et. Veritatis iusto sunt facilis vel fuga neque amet perspiciatis voluptas nesciunt qui quis dolorum explicabo rerum enim, corrupti ipsum eius perferendis voluptates corporis aliquam aliquid. Nobis, nulla dignissimos maxime impedit nemo mollitia reiciendis optio odio distinctio sapiente eos neque cumque enim qui laborum fugit facere placeat iure, perspiciatis saepe doloribus assumenda voluptatum obcaecati debitis. Nisi accusamus, magnam reprehenderit inventore quos molestiae nemo eaque quas enim vel repellat molestias expedita saepe laudantium asperiores, doloribus ullam labore numquam nesciunt! Alias quisquam animi eveniet error iusto doloribus ipsa nemo tenetur ullam ex, consequatur asperiores nam. Exercitationem iste aliquam eveniet, esse nostrum animi mollitia assumenda numquam debitis quam fuga earum minima expedita quae quisquam distinctio veritatis! Laudantium tempora similique sunt, at aperiam modi temporibus, architecto quia molestiae nostrum exercitationem officia deserunt totam asperiores nam? Esse quidem, fugit voluptatem aliquid cumque recusandae consequuntur delectus! In consectetur non excepturi sit facilis, aut iure! Harum, quisquam?</p>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum suscipit obcaecati eos asperiores
+            similique repellat unde dolore non dignissimos numquam, eaque voluptatem incidunt libero omnis quas ipsum
+            sit quis voluptate magnam odio ab quasi aspernatur dolor! Aspernatur, corporis. Repudiandae, dolore itaque
+            pariatur praesentium illum aperiam nisi magni ad exercitationem obcaecati eius cupiditate architecto
+            quisquam officiis dolores hic placeat minus fuga vel corporis repellat. Autem reprehenderit aliquam ab
+            veniam laboriosam recusandae provident eos veritatis iste, inventore explicabo facere, libero earum error
+            similique. Ducimus dolorum voluptas iusto optio, perferendis quibusdam repellat tempora praesentium debitis
+            labore officia sint, tenetur sit ut magnam eos quasi dolorem pariatur nemo. Quam eius velit fuga aperiam aut
+            tenetur ex minus laboriosam, alias id beatae vero nisi magni saepe quibusdam? Vitae error corporis esse vero
+            officia! Nemo neque temporibus nisi, alias modi deserunt ad illum, eos et expedita eum laudantium quas
+            veritatis. Laudantium rerum ipsa earum. Rerum, vitae et. Veritatis iusto sunt facilis vel fuga neque amet
+            perspiciatis voluptas nesciunt qui quis dolorum explicabo rerum enim, corrupti ipsum eius perferendis
+            voluptates corporis aliquam aliquid. Nobis, nulla dignissimos maxime impedit nemo mollitia reiciendis optio
+            odio distinctio sapiente eos neque cumque enim qui laborum fugit facere placeat iure, perspiciatis saepe
+            doloribus assumenda voluptatum obcaecati debitis. Nisi accusamus, magnam reprehenderit inventore quos
+            molestiae nemo eaque quas enim vel repellat molestias expedita saepe laudantium asperiores, doloribus ullam
+            labore numquam nesciunt! Alias quisquam animi eveniet error iusto doloribus ipsa nemo tenetur ullam ex,
+            consequatur asperiores nam. Exercitationem iste aliquam eveniet, esse nostrum animi mollitia assumenda
+            numquam debitis quam fuga earum minima expedita quae quisquam distinctio veritatis! Laudantium tempora
+            similique sunt, at aperiam modi temporibus, architecto quia molestiae nostrum exercitationem officia
+            deserunt totam asperiores nam? Esse quidem, fugit voluptatem aliquid cumque recusandae consequuntur
+            delectus! In consectetur non excepturi sit facilis, aut iure! Harum, quisquam?</p>
         <button id="btn">Show/Hide</button>
     </div>
 
     <script>
-        function toggleHide(){
+        function toggleHide() {
             let para = document.getElementById('para');
-            let btn = document.getElementById('btn');
-            if(para.style.display != 'none'){
+            if (para.style.display != 'none') {
                 para.style.display = 'none';
             }
-            else{
+            else {
                 para.style.display = 'block';
             }
         }
 
         let btn = document.getElementById('btn');
         btn.addEventListener('click', toggleHide);
-        
+
         // btn.addEventListener('click', function toggleHide(){
         //     let para = document.getElementById('para');
         //     let btn = document.getElementById('btn');
@@ -40,4 +62,5 @@
 
     </script>
 </body>
+
 </html>

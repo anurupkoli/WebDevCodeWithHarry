@@ -1,0 +1,100 @@
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+//   res.end('Hello World');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Navigation Bar</title>
+      <style>
+          * {
+              box-sizing: border-box;
+          }
+  
+          .navbar {
+              background-color: rgb(5, 5, 251);
+              border-radius: 10px;
+              margin: auto;
+          }
+  
+          .navbar li {
+              float: left;
+              list-style: none;
+              padding: 5px 31px;
+          }
+  
+          .navbar ul {
+              padding: 2px 10px;
+              overflow: auto;
+          }
+  
+          .navbar li a {
+              text-decoration: none;
+              color: aliceblue;
+          }
+  
+          .navbar li a:hover {
+              text-decoration: dashed;
+              color: darkblue;
+          }
+  
+          .navbar li a:active {
+              text-decoration: dashed;
+              color: black;
+          }
+  
+          .search {
+              margin: auto;
+              border-radius: 10px;
+              padding-top: 2.5px;
+              padding-right: 32px;
+              float: right;
+          }
+  
+          .search input {
+              background-color: aliceblue;
+              border: 2px solid darkblue;
+              text-align: center;
+          }
+  
+          .search input:hover {
+              border-color: black;
+              font-family: 'Courier New', Courier, monospace
+          }
+  
+          .search input:active {
+              background-color: rgb(196, 196, 237);
+          }
+      </style>
+  </head>
+  
+  <body>
+      <header>
+          <nav class="navbar">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <div class="search">
+                      <input type="text" class="search" placeholder="Search here">
+                  </div>
+              </ul>
+          </nav>
+      </header>
+  </body>
+  
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

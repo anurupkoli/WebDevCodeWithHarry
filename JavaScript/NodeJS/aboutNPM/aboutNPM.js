@@ -1,0 +1,1 @@
+console.log("This is about npm 6.0.0.1")
